@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Encriptador de Texto</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <script
+      src="script.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Encriptador de Texto</h1>
+    </header>
+    <main>
+      <section class="ingreso-datos">
+        <div class="contenedor-texto">
+          <label for="texto"></label>
+          <textarea
+            name="texto"
+            id="texto"
+            cols="30"
+            rows="10"
+            class="texto"
+            placeholder="Ingrese el texto que desea encriptar o desencriptar"
+          ></textarea>
+        </div>
+        <div class="contenerdor-botones">
+          <span class="texto-encriptar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm32 224c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z"
+              /></svg
+            >Texto en minuscúlas y sin acentos
+          </span>
+          <div class="botones">
+            <button
+              id="encriptar"
+              class="encriptar"
+            >
+              Encriptar
+            </button>
+            <button
+              id="desencriptar"
+              class="desencriptar boton-secundario"
+            >
+              Desencriptar
+            </button>
+          </div>
+        </div>
+      </section>
+      <aside class="resultado">
+        <div class="sin-datos">
+          <img
+            src="./assets/Muñeco.png"
+            alt=""
+          />
+          <h3>Ningun mensaje fue encontrado</h3>
+          <p>Ingrese el texto que desea encriptar o desencriptar</p>
+        </div>
+        <dic class="con-datos">
+          <p
+            id="texto-resultado"
+            class="texto-resultado"
+          ></p>
+          <button
+            id="copiar"
+            class="boton-terciario"
+          >
+            Copiar
+          </button>
+        </dic>
+      </aside>
+    </main>
+    <!-- toast message -->
+    <div class="toast">
+      <p>Se ha copiado el texto en el portapapeles</p>
+    </div>
+  </body>
+</html>
