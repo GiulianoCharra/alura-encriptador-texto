@@ -177,9 +177,15 @@ svg {
   box-shadow: var(--box-shadow);
 }
 
+select {
+  padding: var(--spacing-small);
+  font-size: 1.2rem;
+}
+
 .sin-datos,
 .con-datos {
   height: 100%;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
